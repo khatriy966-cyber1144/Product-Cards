@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333333;
+  padding: 30px 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: #1b1f3b;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+header p {
+  color: #666666;
+  margin-top: 6px;
+  font-size: 1rem;
+}
+
+/* Layout Container */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Base Product Card Style */
+.product-card {
+  width: 270px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Simple Card Hover (Only Shadow Darker, No Movement) */
+.product-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* Image Container & Static Image */
+.img-container {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content Area Inside Card */
+.card-content {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-title {
+  font-size: 1.15rem;
+  color: #1b1f3b;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.product-desc {
+  font-size: 0.88rem;
+  color: #666666;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+/* Simple Button Hover */
+.btn {
+  background-color: #1b1f3b;
+  color: #ffffff;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #e8a23d;
+  color: #1b1f3b;
+}
+
+/* Specific Card Borders */
+.card-1:hover {
+  border-color: #1b1f3b;
+}
+
+.card-2 {
+  border-color: #e8a23d;
+}
+
+.card-3 {
+  box-sizing: content-box;
+  border: 2px solid #d32f2f;
+}
+
+.card-4 {
+  box-sizing: border-box;
+  border: 2px solid #388e3c;
+}
